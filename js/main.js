@@ -1,4 +1,4 @@
-let fecha = new Date(2025, 0, 1, 0, 0);
+let fecha = new Date(2024, 11, 31, 0, 24);
 let msFecha = fecha.getTime();
 
 let parrafoDias = document.querySelector("#dias");
@@ -35,7 +35,7 @@ let intervalo = setInterval(() => {
 
     if (distancia < 0) {
         clearInterval(intervalo);
-        cuentaAtras.innerHTML = "<p class='grande'>¡Ya llegamos!</p>"
+        cuentaAtras.innerHTML = "<p class='grande'>FELIZ AÑO AMIGUEEEE</p>"
     }
     
 }, 1000)
