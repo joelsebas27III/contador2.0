@@ -8,7 +8,7 @@ let parrafoSegundos = document.querySelector("#segundos");
 let spanFecha = document.querySelector("#fecha");
 let cuentaAtras = document.querySelector("#cuenta-atras");
 let felizAnio = document.querySelector("#feliz-anio"); // Seleccionar el div de Feliz Año
-
+let audio = document.getElementById("fuegos-artificiales"); // Elemento de audio
 // Mostrar la fecha objetivo
 spanFecha.innerText = fecha.toLocaleDateString();
 
@@ -42,6 +42,9 @@ let intervalo = setInterval(() => {
         clearInterval(intervalo);
         cuentaAtras.style.display = "none"; // Ocultar la cuenta atrás
         felizAnio.style.display = "block"; // Mostrar el mensaje de Feliz Año
+        by.style.display = "none"; // Ocultar by
+        fechita.style.display="none"; //oculta fecha
+        audio.play(); // Reproducir el sonido de los fuegos artificiales
     }
 
 }, 1000); // Actualizar cada segundo

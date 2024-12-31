@@ -8,15 +8,14 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
 <body>
-    <div class="fecha">
-        <p>¿Cuánto falta hasta el <span id="fecha">1/1/2025</span>?</p>
+    <div class="fecha" id="fechita">
+        <p>¿Cuánto falta hasta el <span id="fecha" >1/1/2025</span>?</p>
     </div>
     <div id="particles-js"></div>
     <!-- Mensaje de feliz año, inicialmente oculto -->
     <div class="feliz-anio" id="feliz-anio">
         <p>¡Feliz Año Amigueee!</p>
-    </div>
-
+    </div>    
     <div class="cuenta-atras" id="cuenta-atras">
         <div class="grupo">
             <p class="grande" id="dias">00</p>
@@ -35,9 +34,13 @@
             <p class="chico">segundos</p>
         </div>
     </div>
-    <div class="by">
+    <div class="by" id="by">
         <p>by: JoelSebas27</p>
     </div>
+    <audio id="fuegos-artificiales">
+        <source src="audio/190204_new_year_holiday_fireworks-52022.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>  
     <script src="./js/main.js"></script>
 </body>
 </html>
